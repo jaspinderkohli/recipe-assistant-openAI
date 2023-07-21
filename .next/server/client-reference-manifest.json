@@ -40,17 +40,17 @@
         "async": false
       }
     },
-    "(app-client)/./node_modules/next/dist/client/link.js": {
+    "(app-client)/./app/page.tsx": {
       "*": {
-        "id": "(sc_client)/./node_modules/next/dist/client/link.js",
+        "id": "(sc_client)/./app/page.tsx",
         "name": "*",
         "chunks": [],
         "async": false
       }
     },
-    "(app-client)/./app/page.tsx": {
+    "(app-client)/./node_modules/next/dist/client/link.js": {
       "*": {
-        "id": "(sc_client)/./app/page.tsx",
+        "id": "(sc_client)/./node_modules/next/dist/client/link.js",
         "name": "*",
         "chunks": [],
         "async": false
@@ -139,22 +139,6 @@
       ],
       "async": false
     },
-    "/Users/jaspinder/Desktop/Projects/Personal/InteractiveRecipe/recipe-assistant/node_modules/next/dist/client/link.js": {
-      "id": "(app-client)/./node_modules/next/dist/client/link.js",
-      "name": "*",
-      "chunks": [
-        "app/recipe/[recipeName]/page:static/chunks/app/recipe/[recipeName]/page.js"
-      ],
-      "async": false
-    },
-    "/Users/jaspinder/Desktop/Projects/Personal/InteractiveRecipe/recipe-assistant/node_modules/next/dist/esm/client/link.js": {
-      "id": "(app-client)/./node_modules/next/dist/client/link.js",
-      "name": "*",
-      "chunks": [
-        "app/recipe/[recipeName]/page:static/chunks/app/recipe/[recipeName]/page.js"
-      ],
-      "async": false
-    },
     "/Users/jaspinder/Desktop/Projects/Personal/InteractiveRecipe/recipe-assistant/node_modules/next/font/google/target.css?{\"path\":\"app/layout.tsx\",\"import\":\"Inter\",\"arguments\":[{\"subsets\":[\"latin\"]}],\"variableName\":\"inter\"}": {
       "id": "(app-client)/./node_modules/next/font/google/target.css?{\"path\":\"app/layout.tsx\",\"import\":\"Inter\",\"arguments\":[{\"subsets\":[\"latin\"]}],\"variableName\":\"inter\"}",
       "name": "*",
@@ -178,13 +162,30 @@
         "app/page:static/chunks/app/page.js"
       ],
       "async": false
+    },
+    "/Users/jaspinder/Desktop/Projects/Personal/InteractiveRecipe/recipe-assistant/node_modules/next/dist/client/link.js": {
+      "id": "(app-client)/./node_modules/next/dist/client/link.js",
+      "name": "*",
+      "chunks": [
+        "app/recipe/[recipeName]/page:static/chunks/app/recipe/[recipeName]/page.js"
+      ],
+      "async": false
+    },
+    "/Users/jaspinder/Desktop/Projects/Personal/InteractiveRecipe/recipe-assistant/node_modules/next/dist/esm/client/link.js": {
+      "id": "(app-client)/./node_modules/next/dist/client/link.js",
+      "name": "*",
+      "chunks": [
+        "app/recipe/[recipeName]/page:static/chunks/app/recipe/[recipeName]/page.js"
+      ],
+      "async": false
     }
   },
   "entryCSSFiles": {
-    "/Users/jaspinder/Desktop/Projects/Personal/InteractiveRecipe/recipe-assistant/app/recipe/[recipeName]/page": [],
     "/Users/jaspinder/Desktop/Projects/Personal/InteractiveRecipe/recipe-assistant/app/layout": [
       "static/css/app/layout.css"
     ],
-    "/Users/jaspinder/Desktop/Projects/Personal/InteractiveRecipe/recipe-assistant/app/page": []
+    "/Users/jaspinder/Desktop/Projects/Personal/InteractiveRecipe/recipe-assistant/app/page": [],
+    "/Users/jaspinder/Desktop/Projects/Personal/InteractiveRecipe/recipe-assistant/app/recipe/[recipeName]/page": [],
+    "/Users/jaspinder/Desktop/Projects/Personal/InteractiveRecipe/recipe-assistant/app/recipe/[recipeName]/loading": []
   }
 }

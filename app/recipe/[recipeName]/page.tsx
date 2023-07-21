@@ -1,12 +1,3 @@
-// import { getClient } from "@/apollo-client";
-// import StatCard from "@/components/StatCard";
-// import InformationPanel from "@/components/InformationPanel";
-// import fetchWeatherQuery from "@/graphql/queries/fetchWeatherQueries";
-// import TempChart from "@/components/TempChart";
-// import RainChart from "@/components/RainChart";
-// import HumidityChart from "@/components/HumidityChart";
-// import cleanData from "@/lib/cleanData";
-
 /*
 make it such that it's reading recipe data from a JSON since our component is dynamic. It can have any recipe. The json can have these keys
 'OpeningPara', 'history',  'Ingredients', 'Instructions', 'EndingPara'
@@ -39,7 +30,7 @@ type RecipeData = {
 // async function RecipePage({params: {recipeName}} : Props) {
 async function RecipePage({params: {recipeName}} : Props) {
 
-    console.log({recipeName});
+    const decodedRecipe = decodeURIComponent(recipeName);
 
     const res = await fetch(`${getBasePath()}/api/getRecipe`, {
         method: 'POST',
@@ -56,7 +47,6 @@ async function RecipePage({params: {recipeName}} : Props) {
     const res_data = JSON.parse(GPTdata.content);
 
 
-
   return (
     <div>
         <NavBar />
@@ -71,7 +61,7 @@ async function RecipePage({params: {recipeName}} : Props) {
         <div className="max-w-2x bg-gray-100 bg-opacity-75 rounded-lg shadow-md">
         {/* "w- bg-gray-100 bg-opacity-90 rounded-lg shadow-md" */}
           <div className="px-6 py-8">
-            <h2 className="text-3xl font-semibold text-gray-800 mb-4">{recipeName} Recipe</h2>
+            <h2 className="text-3xl font-semibold text-gray-800 mb-4">{decodedRecipe} Recipe</h2>
             <div className="text-gray-600 mb-6">
               <p>{res_data.OpeningPara}</p>
               <p>{res_data.History}</p>
